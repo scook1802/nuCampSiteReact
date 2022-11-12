@@ -14,7 +14,7 @@ const CommentForm = ({ campsiteId }) => {
             author: values.author,
             text: values.commentText
         };
-        console.log({comment});
+        console.log(comment);
         setModalOpen(false);
     };
     return (
@@ -29,7 +29,7 @@ const CommentForm = ({ campsiteId }) => {
                 </ModalHeader>
                 <ModalBody>
                     <Formik initialValues={{
-                        rating: 'undefined',
+                        rating: undefined,
                         author: '',
                         commentText: ''
                     }}
